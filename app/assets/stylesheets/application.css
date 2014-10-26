@@ -10,6 +10,47 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
+ *= require welcome
  *= require_self
  */
+.push-up{ 
+  margin-top: -18px; 
+}
+
+.push-down{ 
+  margin-top: 30px; 
+}
+
+.inline{
+  display: inline-block;
+}
+
+.avatar{
+  margin-bottom: 30px;
+  border-radius: 50px;
+}
+
+.tight{
+  margin-bottom: 0px;
+}
+
+.btn-xlg{
+  width: 200px;
+  height: 100px;
+  padding: 30px 16px;
+  font-size: 1.8em;
+}
+
+.btn-transparent{
+  color: orange;
+  background-color: transparent;
+  border: 3px solid rgba(255,255,255,.4);
+}
+
+.btn-transparent:hover{
+  background-color: transparent;
+}
+
+.text-white{
+	color: white;
+}

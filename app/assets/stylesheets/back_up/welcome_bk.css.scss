@@ -6,15 +6,6 @@
 .well{
   background-image: url(image-path('reflections2.jpg')); 
 }
-
-.index-title{
-  font-size: 4em;
-}
-
-.index-subtitle{
-  font-size: 2em;
-}
-
 .index-logo{
   //background-image: url(image-path('reflections12.jpg')); 
   //height: 400px;
@@ -27,19 +18,12 @@
 }
 
 .index-info{
-  padding: 0;
-  margin: 0 -20px 0 -20px;
-  border-top: 2px sold gray;
-  border-top: 10px solid rgba(255,255,255,.4);
-  border-bottom: 10px solid rgba(255,255,255,.4);
-}
-
-.index-intro{
-  border-bottom: 2px solid orange;
-  margin: 0;
+  //background-color: #CCC;
+  border-bottom: 1px solid gray;
 }
 
 .index-commitment{
+  //background-color: #CCC;
 }
 .intro-teachers{
   display: inline-block;
@@ -100,7 +84,8 @@
 .intro-score-text{
   height: 175px;
   padding-top: 2px;
-  background-color: orange;
+  background-color: #999;
+  background-color: #999;
   border-radius: 90px;
 }
 
@@ -112,8 +97,4 @@
   //background-image: url(image-path('reflections2.jpg'));
   padding: 100px 0 100px 0;
   border-radius: 0px;
-}
-
-.form-group .width-full{
-  width: 100%;
 }

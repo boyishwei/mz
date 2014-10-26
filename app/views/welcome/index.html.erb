@@ -1,15 +1,117 @@
-<div class="index-logo">
-  index logo here
-</div>
-<div class="index-logo">
-  introduction here 
-</div>
-<div class="index-logo">
-  contact info 
-</div>
-<div class="index-logo">
-  consult links here
-</div>
-<div class="index-logo">
-  message post area
+<div class="container well">
+  <div class="row index-logo">
+  </div>
+  <div class="row tight index-band">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <p class="text-center index-title"><em>MZ中高考数学</em></p>
+        <p class="text-center index-subtitle">面向全银川限招生36名</p>
+      </div>
+    </div>
+    <div class"row">
+      <p class="text-center">MZ中高考数学由一对好兄弟创立，以帮助中高中同学提升数学成绩.</p>
+    </div>
+  </div>
+  <div class="row index-info">
+    <div class="row index-intro">
+      <div class="intro-teachers col-md-5">
+        <div class="teacher ma inline">
+          <div class="brief inline">
+            <h4><strong><a href="/teacher/ma">马老师</a></strong></h4>
+            <h5>高中数学</h5>
+            <p>平均分提高30分</p>        
+          </div>
+          <a href="/teacher/ma"><img class="avatar" src="http://placehold.it/100x100"></a>
+        </div>
+        <div class="teacher inline">
+          <a href="/teacher/zh"><img class="avatar" src="http://placehold.it/100x100"></a>
+          <div class="brief inline">
+            <h4 class="text-right"><strong><a href="/teacher/zh">张老师</a></strong></h4>
+            <p>曾经一月内让孩子,</p>
+            <p>由70分提高到120分</p>        
+          </div>
+        </div>
+        <div class="highlight">
+          <p class="text-center">十年中高考数学经验&nbsp;&nbsp;&nbsp;</p>
+        </div>
+      </div>
+      <div class="intro-score col-md-2">
+        <div class="intro-score-text">
+          <h3><strong>中考班</strong></h3> 
+          <h3>任何学生</h3> 
+          <h3>保105分</h3> 
+        </div>
+      </div>
+      <div class="intro-ads push-down col-md-5">
+        <h3>高考A班：保90分(招收测试100分以上)</h3>
+        <h3>高考B班：保120分(招收测试80分以上)</h3> 
+      </div>
+    </div>
+    <div class="row index-commitment">
+      <div class="col-md-6 commitment">
+        <div class="col-md-offset-2 colored-black">
+          <p class="lead text-white text-right">
+          <strong>
+            <span>郑重承诺：</span><br/>
+            中高考成绩少一分退200元！
+          </strong>
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6 contact">
+        <div class="col-md-offset-1 colored-white">
+          <p class="lead text-white text-left">
+          <strong>
+            联系电话: 18995035129 0951-5023623<br/> 
+            微信：nxshuxue(可以随时提问) <br/>
+            官方网站：www.nxshuxue.com
+          </strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row index-exhib">
+    <div class="row push-up">
+      <div class="col-md-6">
+        <p class="text-center"><a class="btn btn-warning btn-lg btn-xlg btn-transparent" href='/class/kds' role="button">KDS中考数学</a></p>
+      </div>
+      <div class="col-md-6">
+        <p class="text-center"><a class="btn btn-warning btn-lg btn-xlg btn-transparent" href='/class/mz'  role="button">MZ高考数学</a></p>
+      </div>
+    </div>
+    <!--
+    <div class="row push-down">
+      <div class="col-md-6">
+        <p class="text-center"><a class="btn btn-warning btn-lg btn-xlg btn-transparent" role="button"></a></p>
+      </div>
+      <div class="col-md-6">
+        <p class="text-center"><a class="btn btn-warning btn-lg btn-xlg btn-transparent" role="button"></a></p>
+      </div>
+    </div>
+    -->
+    <div class="row push-down">
+      <p class="text-center lead text-white">学习有困惑? 尽管给我们说！</p>
+      <p class="text-center"><a class="btn btn-warning btn-lg" role="button" data-toggle="modal" data-target="#msgModal">给我们留言</a></p>
+    </div>
+    <div class="modal fade" id="msgModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title">给我们说说吧～</h4>
+          </div>
+          <div class="modal-body">
+            <div id="error-msg">
+            </div>
+            <%= render partial:"messages/form", locals:{message:Message.new} %>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">叉掉</button>
+            <button type="button" class="btn btn-primary" id="submit">提交给我们</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal --> 
+  </div>
 </div>

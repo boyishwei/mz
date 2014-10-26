@@ -1,0 +1,33 @@
+<% @message = message if defined? message %>
+<%= form_for(@message, remote: true, html:{role: "form"}) do |f| %>
+  <% if @message.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@message.errors.count, "error") %> prohibited this message from being saved:</h2>
+
+      <ul>
+        <% @message.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div>
+    留下你的&nbsp;
+    <div class="field inline">
+      <%= f.label :phone,class: "sr-only" %>
+      <%= f.text_field :phone, class: "form-control", placeholder: "手机号码"%>
+    </div>
+    &nbsp;或者&nbsp;
+    <div class="field inline">
+      <%= f.label :email, class: "sr-only" %>
+      <%= f.text_field :email, class: "form-control", placeholder: "Email地址" %>
+    </div>
+  </div>
+  <div class="field">
+    <%= f.label :message, class: "sr-only" %><br>
+    <%= f.text_area :message, class: "form-control", rows: 5 %>
+  </div>
+  <div class="actions">
+    <%= f.submit id: "msg-submit", class: "hidden" %>
+  </div>
+<% end %>

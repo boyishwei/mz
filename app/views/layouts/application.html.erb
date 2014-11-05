@@ -1,17 +1,73 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Mz</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-  <div class="header">
-  </div>
-  <%= yield %>
-  <div class="footer">
-  </div>
+  <head>
+    <title>Mz</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div class="header">
+      <nav class="navbar navbar-default" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><img class="brand-img" src="<%= image_url 'MZLogo.jpg' %>"></a>
+        </div>
 
-</body>
-</html>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#">在线咨询</a></li>
+            <li><a href="#">MZ中高考数学</a></li>
+            <li><a href="#">KDS中考</a></li>
+            <li><a href="#">满分化学</a></li>
+            <li><a href="#">艺术生保上线</a></li>
+            <li><a href="/about">公司简介</a></li>
+            <li><a href="#">全区统一热线&nbsp;0951-5023621</a></li>
+            <li><a href="#">微信：nxshuxue</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+      </nav>
+    </div>
+    <%= yield %>
+    <!--footer-->          
+    <footer class="footer">
+    <div class="container">
+      <p>All rights reserved by M&amp;M Edu.</p>
+      <p>Copyright &copy; 2014 美得美教育</p>
+      <ul class="footer-links">
+        <li>
+        <%=link_to "关于", about_path %>
+        </li>
+        <li class="muted"> · </li>
+        <li>
+        <%=link_to "联系我们"%>
+        </li>
+        <li class="muted"> · </li>
+        <li>
+        <%=link_to "给我们留言"%>
+        </li>
+        <li class="muted"> · </li>
+        <li>
+        <%=link_to "招聘"%>
+        </li>
+        <li class="muted"> · </li>
+        <li>
+        <%=link_to "宁ICP备13000608号"%>
+        </li>
+        <li>
+        </li>
+        <li>
+        </li>
+        </ul>
+      </div>
+    </body>
+  </html>

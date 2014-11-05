@@ -54,3 +54,30 @@
 .text-white{
 	color: white;
 }
+
+.brand-img{
+  margin-top: -5px;
+  height: 150%
+}
+
+.footer {
+  color:#999;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: -21px;
+  border-top: 1px solid #e5e5e5;
+  background-color: #111111;
+}
+
+.footer-links {
+  margin: 10px 0;
+}
+
+.footer-links li {
+  display: inline;
+  padding: 0 2px;
+}
+
+.muted {
+  color: #999;
+}

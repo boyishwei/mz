@@ -7,6 +7,9 @@ Rails.application.routes.draw do
   get 'class/:name' => "class#showClass"
 
   root 'welcome#index'
+
+  get "/about" => "welcome#about"
+
   #root 'application#render_404'
   get "*a" => "application#render_404"
 end
